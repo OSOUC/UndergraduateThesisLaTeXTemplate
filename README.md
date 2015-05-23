@@ -1,7 +1,7 @@
 # Undergraduate Thesis LaTeX Template of Ocean University of China
 Most of the codes are from Lu, B. I refactored it and made it more easy to use. So the main author of this template is Lu.
 
-You may download it from [Releases Page](https://github.com/OSOUC/UndergraduateThesisLaTeXTemplate/releases). 
+You may download it from [Releases Page](https://github.com/OSOUC/UndergraduateThesisLaTeXTemplate/releases). If there is any problem during using this template please submit an issue on [Issues Page](https://github.com/OSOUC/UndergraduateThesisLaTeXTemplate/issues). 
 
 ## Usage
 Fist of all you should have a LaTeX environment. Our code is based on CTeX, so you may visit [CTeX](http://www.ctex.org/HomePage) to learn how to use it.
