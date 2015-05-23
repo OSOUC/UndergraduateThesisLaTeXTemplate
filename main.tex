@@ -1,0 +1,43 @@
+\documentclass[cn]{oucart}
+
+\title{论文标题}
+\entitle{The Title of the Thesis}
+\author{作者名}
+\studentid{作者学号}
+\advisor{指导教师名}
+\department{学院名}{专业年级}
+
+\cnabstractkeywords{
+  这是中文摘要. 
+}{
+  中文, 关键字
+}
+\enabstractkeywords{
+  This is an English abstract. 
+}{
+  English, Abstract
+}
+
+\begin{document}
+
+\makecover
+
+\makeabstract
+
+\tableofcontents
+
+\newpage
+
+% 正文内容
+% 建议使用 \input{<文件名>} 指令引用其他文件
+\section{示例章节}
+\subsection{示例章节}
+\subsubsection{示例章节}
+中国海洋大学的发展目标是: 到 2025 年建校百年前后, 将学校建设成为国际知名, 特色显著的高水平研究型大学; 到本世纪中叶或更长一段时间, 立足海洋强国建设, 大力推进改革创新, 通过强化建设和持续发展, 努力实现全面跨越, 力争使学校跻身特色显著的世界一流大学行列\cite{wiki:ouc}. 
+
+\newpage
+
+\bibliographystyle{unsrt}
+\bibliography{reference}
+
+\end{document}
