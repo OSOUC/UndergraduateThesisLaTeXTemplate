@@ -16,18 +16,27 @@
 }
 
 \newcommand*{\makeabstract}{
+  \thispagestyle{zhabstract}
   \newpage
-  \vspace{20mm}
-  \ifdef\@cnabstract{
+  \pagenumbering{Roman}
+  \begin{center}
+      \zihao{-3}{\heiti{\@title}}
+  \end{center}
+  \ifdefined\@cnabstract{
     \renewcommand\abstractname{\zihao{-3}{\heiti{摘\ \ \ 要}}}
     \begin{abstract}
       \zihao{-4}{\songti{\@cnabstract}}\par
       \zihao{-4}{\heiti{\textbf{关键词: \@cnkeywords}}}
     \end{abstract}
     \vspace{5mm}
+    \newpage
   }
   \fi
-  \ifdef\@enabstract{
+  \ifdefined\@enabstract{
+    \thispagestyle{enabstract}
+    \begin{center}
+        \zihao{-3}{\rmfamily{\textbf{\@entitle}}}
+    \end{center}
     \renewcommand\abstractname{\zihao{-3}{\sffamily{Abstract}}}
     \begin{abstract}
       \zihao{-4}{\rmfamily{\@enabstract}}\par
