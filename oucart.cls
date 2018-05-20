@@ -12,17 +12,26 @@
 
 \RequirePackage{ctex}
 \RequirePackage{CJKutf8}
+% Windows用户使用以下字体配置
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
 
-\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
-\setCJKsansfont[BoldFont=STHeiti]{STXihei}
-\setCJKmonofont{STFangsong}
+% macOS用户使用以下字体配置 
+%\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
+%\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+%\setCJKmonofont{STFangsong}
 
+\RequirePackage{amsmath}
 \RequirePackage{booktabs}
+\RequirePackage{caption}
 \RequirePackage{setspace}
+\RequirePackage{subfigure}
 \RequirePackage{titlesec}
 \RequirePackage{titletoc}
 \RequirePackage{ulem}
 
+% 页边距设置
 \RequirePackage{geometry}
 \linespread{1.35}
 
@@ -118,3 +127,14 @@
 \fancypagestyle{tableofcontents}{
 \chead{\small{目\ \ \ 录}}
 }
+
+% 图、表、公式样式
+\captionsetup{figurewithin=section}
+\captionsetup{tablewithin=section}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand\thefigure{\arabic{section}-\arabic{figure}}
+\renewcommand\thetable{\arabic{section}-\arabic{table}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\renewcommand{\captionfont}{\zihao{5}\heiti} 
+\numberwithin{equation}{section}
