@@ -12,23 +12,27 @@
 
 \RequirePackage{ctex}
 \RequirePackage{CJKutf8}
-\setCJKmainfont{SimSun}
-\setCJKsansfont{SimHei}
-\setCJKmonofont{FangSong}
 
+\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmonofont{STFangsong}
+
+\RequirePackage{booktabs}
 \RequirePackage{setspace}
 \RequirePackage{titlesec}
 \RequirePackage{titletoc}
 \RequirePackage{ulem}
 
 \RequirePackage{geometry}
-\linespread{1.667}
+\linespread{1.35}
 
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 
 \RequirePackage{assets/cover}
 \RequirePackage{assets/abstractkeywords}
+\RequirePackage{assets/signature}
+\RequirePackage{assets/gbt7714}
 
 % ``目录'', ``参考文献''样式
 \iflangcn
@@ -41,7 +45,7 @@
 \fi
 
 % 调整页边距
-\geometry{top=1.2in,bottom=1.2in,left=1.2in,right=1in} 
+\geometry{top=2.54cm,bottom=2.54cm,left=3cm,right=3cm} 
 
 \makeatletter
 
@@ -72,17 +76,16 @@
 % 修改标题样式
 \titleformat{\section}
             {\zihao{3}\heiti\raggedright}
-            {}{0em}
+            {\arabic{section}.}{1em}
             {}
 \titleformat{\subsection}
             {\zihao{4}\heiti\raggedright}
-            {}{0em}
+            {\arabic{section}.\arabic{subsection}}{1em}
             {}
 \titleformat{\subsubsection}
             {\zihao{4}\heiti\raggedright}
-            {}{0em}
+            {\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}{1em}
             {}
-
 % 修改目录样式
 \titlecontents{section}
               [10mm]
@@ -102,3 +105,16 @@
               {\contentslabel{3em}}
               {}
               {\titlerule*{.}\contentspage}
+
+% 修改部分页眉样式
+\fancypagestyle{zhabstract}{
+\chead{\small{摘\ \ \ 要}}
+}
+
+\fancypagestyle{enabstract}{
+\chead{\small{Abstract}}
+}
+
+\fancypagestyle{tableofcontents}{
+\chead{\small{目\ \ \ 录}}
+}

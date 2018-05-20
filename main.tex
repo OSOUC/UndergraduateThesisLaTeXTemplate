@@ -1,16 +1,16 @@
-\documentclass[cn]{oucart}
+\documentclass[zihao = -4,cn]{oucart}
 
 \title{论文标题}
 \entitle{The Title of the Thesis}
 \author{作者名}
-\studentid{作者学号}
+\studentid{123456789}
 \advisor{指导教师名}
 \department{学院名}{专业年级}
 
 \cnabstractkeywords{
-  这是中文摘要. 
+ 这是中文摘要。 
 }{
-  中文, 关键字
+中文, 关键字
 }
 \enabstractkeywords{
   This is an English abstract. 
@@ -22,12 +22,16 @@
 
 \makecover
 
+\makesignature
+
 \makeabstract
 
+\thispagestyle{tableofcontents}  
 \tableofcontents
 
 \newpage
-
+\pagenumbering{arabic}
+\setcounter{page}{1} 
 % 正文内容
 % 建议使用 \input{<文件名>} 指令引用其他文件
 \section{示例章节}
@@ -37,7 +41,16 @@
 
 \newpage
 
-\bibliographystyle{unsrt}
-\bibliography{reference}
+%\bibliographystyle{unsrt}
+\bibliography{main}
 
+\newpage
+\begin{center}
+\zihao{3} \textbf{致谢} \\
+\end{center}
+
+\newpage
+\begin{center}
+\zihao{3} \textbf{附录} \\
+\end{center}
 \end{document}
