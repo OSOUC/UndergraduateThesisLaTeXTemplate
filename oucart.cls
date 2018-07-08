@@ -25,6 +25,7 @@
 \RequirePackage{amsmath}
 \RequirePackage{booktabs}
 \RequirePackage{caption}
+\RequirePackage{graphicx}
 \RequirePackage{setspace}
 \RequirePackage{subfigure}
 \RequirePackage{titlesec}
