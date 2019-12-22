@@ -5,6 +5,9 @@
 
 你可以在[Release Page](https://github.com/OSOUC/UndergraduateThesisLaTeXTemplate/releases)下载最新稳定版本。如果你有任何问题，请在[Issues Page](https://github.com/OSOUC/UndergraduateThesisLaTeXTemplate/issues)提交。
 
+研究生毕业论文LaTeX模版请参考[oucthesis](https://github.com/ouc-ocean-group/oucthesis
+)。
+
 ## 使用方法
 首先你的计算机上应该安装LaTeX环境。我们的代码基于CTeX，所以你可以在[CTeX](http://www.ctex.org/HomePage)学习如何使用。  
 使用中文模版请在TeX文件使用`\documentclass[cn](oucart)`，若使用英文模版，请使用 `\documentclass[en](oucart)`。 
