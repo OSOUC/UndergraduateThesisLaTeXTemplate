@@ -13,7 +13,7 @@
 \RequirePackage{ctex}
 \RequirePackage{CJKutf8}
 % Windows用户使用以下字体配置
-\setCJKmainfont{SimSun}
+\setCJKmainfont{SimSun}[AutoFakeBold] %用于实现字体加粗
 \setCJKsansfont{SimHei}
 \setCJKmonofont{FangSong}
 
@@ -113,6 +113,13 @@
               [25mm]
               {\zihao{-4}\songti}
               {\contentslabel{3em}}
+              {}
+              {\titlerule*{.}\contentspage}
+% 为了把致谢和参考文献放入目录
+\titlecontents{nonumbersection}
+              [4.6mm]
+              {\zihao{-4}\songti}
+              {\contentslabel{0em}}
               {}
               {\titlerule*{.}\contentspage}
 
