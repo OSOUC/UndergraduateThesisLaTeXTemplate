@@ -26,7 +26,7 @@
     \renewcommand\abstractname{\zihao{-3}{\heiti{摘\ \ \ 要}}}
     \begin{abstract}
       \zihao{-4}{\songti{\@cnabstract}}\par
-      \zihao{-4}{\heiti{\textbf{关键词: \@cnkeywords}}}
+      \zihao{-4}{\heiti{\noindent \textbf{\\ 关键词：\@cnkeywords}}}
     \end{abstract}
     \vspace{5mm}
     \newpage
@@ -35,12 +35,12 @@
   \ifdefined\@enabstract{
     \thispagestyle{enabstract}
     \begin{center}
-        \zihao{-3}{\rmfamily{\textbf{\@entitle}}}
+        \zihao{-3}{\heiti{\textbf{\@entitle}}}
     \end{center}
-    \renewcommand\abstractname{\zihao{-3}{\sffamily{Abstract}}}
+    \renewcommand\abstractname{\zihao{-3}{\heiti{Abstract}}}
     \begin{abstract}
-      \zihao{-4}{\rmfamily{\@enabstract}}\par
-      \zihao{-4}{\sffamily{\textbf{Keywords: \@enkeywords}}}
+      \zihao{-4}{\songti{\noindent \@enabstract}}\par
+      \zihao{-4}{\heiti{\noindent \textbf{\\ Keywords:\@enkeywords}}}
     \end{abstract}
   }
   \fi
