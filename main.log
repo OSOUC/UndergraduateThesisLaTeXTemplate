@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.5)  2 MAY 2021 10:11
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.5)  2 MAY 2021 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,6 +693,11 @@ Package fontspec Info: Font family 'FandolKai-Regular(0)' created for font
 (fontspec)             <->"[FandolKai-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
+
+LaTeX Font Warning: Font shape `TU/FandolKai-Regular(0)/b/n' undefined
+(Font)              using `TU/FandolKai-Regular(0)/m/n' instead on input line 2
+3.
+
 [1
 
 ]
@@ -784,13 +789,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.22pt have occurred.
 
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 10651 strings out of 476919
- 248911 string characters out of 5825425
- 596383 words of memory out of 5000000
- 30407 multiletter control sequences out of 15000+600000
- 412172 words of font info for 113 fonts, out of 8000000 for 9000
+ 10656 strings out of 476919
+ 249232 string characters out of 5825425
+ 596379 words of memory out of 5000000
+ 30411 multiletter control sequences out of 15000+600000
+ 412180 words of font info for 114 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,11n,118p,2532b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 
